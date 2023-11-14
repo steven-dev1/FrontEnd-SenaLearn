@@ -3,14 +3,17 @@ import Layout from "../layouts/Layout.astro";
 import Inputs from "../components/Inputs.astro";
 ---
 
-<Layout title="Register">
-    <main class="w-full h-screen flex justify-center items-center bg-[#00324D] lg:bg-white">
+<Layout title="Registrarse">
+    <a href="/" class="hover:bg-black hover:scale-110 transition-all duration-200 absolute left-7 top-7 bg-[#00324D] rounded-full w-[50px] h-[50px] p-5 text-white cursor-pointer flex justify-center items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512"><style>svg{fill:#ffffff}</style><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+    </a>
+    <main class="w-full h-screen flex justify-center items-center bg-[#00324D] lg:bg-white" >
         <section class="md:w-2/4 w-full flex flex-col items-center gap-2 mx-auto justify-center p-10 text-center" transition:name="mainnn" transition:animate="slide">
             <h3 class="text-3xl font-bold text-[#00324D]">¿Ya tienes una cuenta?</h3>
             <span class="text-[#00324D]">No te preocupes, crea una en instantes</span>
             <a href="./login" id="desktop-register-btn" class="bg-[#00324D] text-white py-2 px-3 rounded-xl text-xl font-semibold mx-3 hover:scale-110 transition-all duration-200 hover:shadow-lg">Iniciar sesión</a>
         </section>
-        <section class="bg-[#00324D] w-3/4 hidden flex-col items-center justify-center gap-2 border-l-[16px] border-[#39A900] lg:flex h-full">
+        <section class="bg-[#00324D] w-3/4 hidden flex-col items-center justify-center gap-2 border-l-[16px] border-[#39A900] lg:flex h-full" transition:name="main2" transition:animate="slide">
             <h2 class="text-3xl sm:text-5xl font-bold text-white">Registro</h2>
             <form class="flex flex-col w-full lg:w-2/4">
                 <Inputs placeholder="Nombre" type="text"/>

@@ -1,13 +1,74 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import MessageHeader from '../components/MessageHeader.astro';
+import HeaderVisitor from '../components/HeaderVisitor.astro';
+import SignUpCards from '../components/SignUpCards.astro'
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Inicio">
+	<MessageHeader />
+	<HeaderVisitor />
 	<main class="text-white">
-		<h1>Welcome to <span>Astro</span></h1>
-		<p>
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
+		<section class="bg-[#00324D] pb-20 flex flex-col justify-center items-center">
+			<div class="my-7">
+				<h1 class="text-5xl font-bold">Cursos populares</h1>
+			</div>
+			<div class="w-full flex justify-evenly">
+				<SignUpCards 
+					title="Desarrollo Front-End con HTML, CSS y JavaScript"
+					score="4.8"
+					img=""
+					category="Desarrollo de software"
+				>
+					<i slot="stars" class="fa-solid fa-star"></i>
+					<i slot="stars" class="fa-solid fa-star"></i>
+					<i slot="stars" class="fa-solid fa-star"></i>
+					<i slot="stars" class="fa-solid fa-star"></i>
+				</SignUpCards>
+				<SignUpCards 
+					title="Desarrollo Back-End con PHP, Python y Java"
+					score="4.7"
+					img=""
+					category="Desarrollo de software"
+				>
+					<i slot="stars" class="fa-solid fa-star"></i>
+					<i slot="stars" class="fa-solid fa-star"></i>
+					<i slot="stars" class="fa-solid fa-star"></i>
+				</SignUpCards>
+				<SignUpCards 
+					title="Introducción a Bases de datos y SQL"
+					score="4.8"
+					img=""
+					category="Desarrollo de software"
+				>
+					<i slot="stars" class="fa-solid fa-star"></i>
+					<i slot="stars" class="fa-solid fa-star"></i>
+					<i slot="stars" class="fa-solid fa-star"></i>
+					<i slot="stars" class="fa-solid fa-star"></i>
+				</SignUpCards>
+			</div>
+		</section>
 	</main>
+	<footer>
+		<div class="flex justify-evenly my-8 items-center">
+			<div class="w-1/4 flex flex-col gap-2 items-center justify-center">
+				<img class="w-44" src="../../public/Sena Learn LOGO.png" alt="">
+				<p class="font-medium">Creemos en el poder de la educación para cambiar vidas, y estamos aquí para impulsarte en tu viaje hacia el éxito</p>
+			</div>
+			<ul class="list-disc font-medium">
+				<li>Negocios y Emprendimiento</li>
+				<li>Diseño y multimedia</li>
+				<li>Analisis y desarrollo de software</li>
+				<li>Mantenimiento de computadores</li>
+				<li>Automotriz</li>
+			</ul>
+			<ul class="list-disc font-medium">
+				<li>Aviación</li>
+				<li>Gestión</li>
+				<li>Seguridad y salud en el trabajo</li>
+				<li>Modistería</li>
+				<li>Entrenamiento deportivo</li>
+			</ul>
+		</div>
+	</footer>
 </Layout>
