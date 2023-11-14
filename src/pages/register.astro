@@ -1,23 +1,23 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Inputs from "../components/Inputs.astro";
 ---
 
 <Layout title="Register">
     <main class="w-full h-screen flex justify-center items-center bg-[#00324D] lg:bg-white">
-        <section class="md:w-2/4 w-full flex flex-col items-center gap-2 mx-auto justify-center p-10 text-center">
+        <section class="md:w-2/4 w-full flex flex-col items-center gap-2 mx-auto justify-center p-10 text-center" transition:name="mainnn" transition:animate="slide">
             <h3 class="text-3xl font-bold text-[#00324D]">¿Ya tienes una cuenta?</h3>
             <span class="text-[#00324D]">No te preocupes, crea una en instantes</span>
-            <button id="desktop-register-btn" class="bg-[#00324D] text-white py-2 px-3 rounded-xl text-xl font-semibold mx-3 hover:scale-110 transition-all duration-200 hover:shadow-lg">Iniciar sesión</button>
+            <a href="./login" id="desktop-register-btn" class="bg-[#00324D] text-white py-2 px-3 rounded-xl text-xl font-semibold mx-3 hover:scale-110 transition-all duration-200 hover:shadow-lg">Iniciar sesión</a>
         </section>
         <section class="bg-[#00324D] w-3/4 hidden flex-col items-center justify-center gap-2 border-l-[16px] border-[#39A900] lg:flex h-full">
             <h2 class="text-3xl sm:text-5xl font-bold text-white">Registro</h2>
             <form class="flex flex-col w-full lg:w-2/4">
-                <input type="text" name="" id="input-name-login" placeholder="Nombre" class="my-2 p-3 rounded-xl bg-[#F5F5F5] outline outline-transparent focus:outline-[#39A900] focus:outline-[3px]">
-                <input type="text" name="" id="input-name-login" placeholder="Apellidos" class="my-2 p-3 rounded-xl bg-[#F5F5F5] outline outline-transparent focus:outline-[#39A900] focus:outline-[3px]">
-                <input type="text" name="" id="input-email-login" placeholder="N° identificacion o Email" class="my-2 p-3 rounded-xl bg-[#F5F5F5] outline outline-transparent focus:outline-[#39A900] focus:outline-[3px]">
-                <input type="password" name="" id="input-password-register" placeholder="Contraseña" class="my-2 p-3 rounded-xl bg-[#F5F5F5] outline outline-transparent focus:outline-[#39A900] focus:outline-[3px]">
-                <input onchange="onChangePassword" type="password" name="" id="input-repeat-password-register" placeholder="Repita la contraseña" class="my-2 p-3 rounded-xl bg-[#F5F5F5] outline outline-transparent focus:outline-[#39A900] focus:outline-[3px]">
-                <span class="text-red-700 m-3" id="span-repeat-password"></span>
+                <Inputs placeholder="Nombre" type="text"/>
+                <Inputs placeholder="Apellido" type="text"/>
+                <Inputs placeholder="N° de identificación o Email" type="email"/>
+                <Inputs placeholder="Contraseña" type="password"/>
+                <Inputs placeholder="Repite la contraseña" type="password"/>
             </form>
             <div class="flex flex-col sm:flew-row my-3">
                 <button class="lg:text-[#00324D] lg:bg-white text-[#00324D] bg-white py-2 px-3 rounded-xl text-base sm:text-xl font-semibold hover:scale-110 transition-all duration-200 hover:shadow-lg">Registrarse</button>
@@ -31,5 +31,4 @@ import Layout from "../layouts/Layout.astro";
             </div>
         </section>
     </main>
-    <script src="../scripts/LoginRegister.js"></script>
 </Layout>
