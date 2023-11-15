@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import MessageHeader from '../components/MessageHeader.astro';
 import HeaderVisitor from '../components/HeaderVisitor.astro';
 import SignUpCards from '../components/SignUpCards.astro'
+import Footer from '../components/Footer.astro'
 ---
 
 <Layout title="Inicio">
@@ -17,9 +18,8 @@ import SignUpCards from '../components/SignUpCards.astro'
 				<SignUpCards 
 					title="Desarrollo Front-End con HTML, CSS y JavaScript"
 					score="4.8"
-					img=""
-					category="Desarrollo de software"
-				>
+					img="../../public/image1.jpg"
+					category="Desarrollo de software">
 					<i slot="stars" class="fa-solid fa-star"></i>
 					<i slot="stars" class="fa-solid fa-star"></i>
 					<i slot="stars" class="fa-solid fa-star"></i>
@@ -28,7 +28,7 @@ import SignUpCards from '../components/SignUpCards.astro'
 				<SignUpCards 
 					title="Desarrollo Back-End con PHP, Python y Java"
 					score="4.7"
-					img=""
+					img="../../public/image2.jpeg"
 					category="Desarrollo de software"
 				>
 					<i slot="stars" class="fa-solid fa-star"></i>
@@ -38,7 +38,7 @@ import SignUpCards from '../components/SignUpCards.astro'
 				<SignUpCards 
 					title="Introducción a Bases de datos y SQL"
 					score="4.8"
-					img=""
+					img="../../public/image3.jpeg"
 					category="Desarrollo de software"
 				>
 					<i slot="stars" class="fa-solid fa-star"></i>
@@ -48,9 +48,7 @@ import SignUpCards from '../components/SignUpCards.astro'
 				</SignUpCards>
 			</div>
 		</section>
-	</main>
-	<footer>
-		<div class="flex justify-evenly my-8 items-center">
+		<section class="flex justify-evenly my-10 items-center text-black">
 			<div class="w-1/4 flex flex-col gap-2 items-center justify-center">
 				<img class="w-44" src="../../public/Sena Learn LOGO.png" alt="">
 				<p class="font-medium">Creemos en el poder de la educación para cambiar vidas, y estamos aquí para impulsarte en tu viaje hacia el éxito</p>
@@ -69,6 +67,7 @@ import SignUpCards from '../components/SignUpCards.astro'
 				<li>Modistería</li>
 				<li>Entrenamiento deportivo</li>
 			</ul>
-		</div>
-	</footer>
+		</section>
+	</main>
+	<Footer />
 </Layout>
