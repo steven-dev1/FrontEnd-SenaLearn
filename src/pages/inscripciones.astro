@@ -1,0 +1,110 @@
+---
+import Layout from "../layouts/Layout.astro";
+import HeaderVisitor from "../components/HeaderVisitor.astro";
+import MessageHeader from "../components/MessageHeader.astro";
+import ContenidoCurso from "../components/ContenidoCurso.astro";
+import Footer from "../components/Footer.astro";
+import SignUpCard from "../components/SignUpCard.astro"
+---
+
+<Layout title="Inscripciones">
+    <MessageHeader />
+    <HeaderVisitor />
+
+    <section class="flex flex-col w-full h-[650px] relative ">
+        <div class="w-full h-6/7 bg-[#00324D] relative flex items-center justify-center gap-10 mt-10">
+            <div class="relative top-[5em] w-[600px] h-[600px] bg-[#fff] rounded-[20px] shadow-xl p-[25px] flex flex-col items-start gap-8"
+            >
+                <div class="w-6/7 flex flex-col items-start justify-center gap-2 ">
+                <h2 class="font-bold text-[30px]">
+                    Desarrollo Front-End con HTML, CSS y JavaScript
+                </h2>
+                <p class="text-[15px]">
+                    ¿Deseas adentrarte en el emocionante mundo del desarrollo web?
+                    Nuestro curso de Desarrollo Front-End con HTML, CSS y JavaScript es
+                    tu punto de partida perfecto. Este programa intensivo te
+                    proporcionará las habilidades esenciales que necesitas para crear
+                    sitios web atractivos y funcionales.
+                </p>
+            </div>
+
+            <div class="w-6/7 flex flex-col items-start justify-center gap-2">
+                <h2 class="font-bold text-[23px]">Lo que aprenderas</h2>
+                <ul class="list-disc text-[15px] px-[15px]">
+                    <li>
+                        Ser un programador desde cero, sin conocimiento en otro lenguaje o
+                        con algo previo
+                    </li>
+                    <li>Ejercitar la lógica de programación</li>
+                    <li>
+                        Comprender cómo la vida cotidiana puede ser fácilitada o simulada
+                        con código
+                    </li>
+                    <li>Usar Visual Studio Code como Editor de Código</li>
+                    <li>
+                        Mejorar las habilidades de programación, mejorar procesos y
+                        fácilitar la comprensión de código
+                    </li>
+                    <li>Aprender HTML y CSS</li>
+                    <li>Preparar un entorno dónde programar en JavaScript</li>
+                    <li>Operaciones aritméticas y jerarquía de JavaScript</li>
+                    <li>Manejo de cadenas en JavaScript</li>
+                </ul>
+                </div>
+            </div>
+
+            <div class="relative top-[5em] w-[350px] h-[600px] bg-[#fff] rounded-[20px] shadow-xl flex flex-col justifi-center items-start p-[25px] "
+            >
+                <SignUpCard 
+					title="Desarrollo Front-End con HTML, CSS y JavaScript"
+					score="4.8"
+					img="../../public/image1.jpg"
+					category="Desarrollo de software">
+					<i slot="stars" class="fa-solid fa-star"></i>
+					<i slot="stars" class="fa-solid fa-star"></i>
+					<i slot="stars" class="fa-solid fa-star"></i>
+					<i slot="stars" class="fa-solid fa-star"></i>
+				</SignUpCard>
+
+                <div class="flex flex-col w-full justify-center items-start mt-5 gap-4">
+                <p class="text-[15px] font-bold">Este curso incluye:</p>
+                <ul class="w-full h-full text-[15px] list-disc px-[15px]">
+                    <li>25,5 horas de vídeo bajo demanda</li>
+                    <li>21 artículos</li>
+                    <li>148 recursos descargables</li>
+                    <li>Acceso en dispositivos móviles y TV</li>
+                    <li>Acceso de por vida</li>
+                    <li>Certificado</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full h-[350px] mt-24 flex items-center justify-center p-8">
+        <div class="w-[800px] h-full bg-[#00324D] rounded-3xl flex flex-col items-start    justify-around   p-5">
+            <h1 class="text-white text-[25px] font-bold">Contenido del curso</h1>
+
+            <ContenidoCurso contenido="Bienvenida" duracion="4 clases - 7 horas "/>
+            <ContenidoCurso contenido="Datos de control" duracion="10 clases - 7 horas "/>
+            <ContenidoCurso contenido="Rey de las funciones" duracion="8 clases - 7 horas "/>
+        </div>
+    </section>
+
+    <section class="w-full flex flex-col items-center mt-10 mb-10">
+        <h1 class="text-center text-[30px] font-bold ">¿Quien es tu instructor?</h1>
+        <div class="w-2/3 flex items-center gap-10 mt-10">
+            <picture class="w-1/2 flex items-center justify-center">
+                <img src="./public/Natee.webp" alt="Natee" class="rounded-full w-1/2">
+            </picture>
+            <div class="w-1/2">
+                <span class="text-[19px] font-bold">Nate Gentile</span>
+                <p>Nate Gentile es un Youtuber de informática con más de 2.2 millones de suscriptores. Sus videos varían en temáticas desde la ciberseguridad a explicaciones técnicas sobre el funcionamiento de componentes y montajes 
+                    de PCs de lujo con case modding.Nate ejerció durante 10 años la profesión de programador, en su última etapa liderando proyectos de gran calibre con el puesto de ingeniero de software senior.</p>
+            </div>
+        </div>
+    </section>
+
+    <Footer/>
+
+</Layout>

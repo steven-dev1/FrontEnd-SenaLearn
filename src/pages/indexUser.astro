@@ -1,0 +1,47 @@
+---
+import Layout from '../layouts/Layout.astro';
+import MessageHeader from '../components/MessageHeader.astro';
+import HeaderUser from '../components/HeaderUser.astro';
+import CardsUser from '../components/CardsUser.astro';
+import Footer from '../components/Footer.astro'
+---
+
+<Layout title="Inicio">
+	<MessageHeader />
+	<HeaderUser />
+	<main class="text-white">
+		<section class="bg-[#00324D] pb-20 flex flex-col justify-center items-center">
+			<div class="my-7">
+				<h1 class="text-5xl font-bold">Cursos </h1>
+			</div>
+			<div class="w-full flex justify-evenly">
+				<CardsUser
+				title="Desarrollo Front-End con HTML, CSS y JavaScript"
+				img="../../public/image1.jpg"
+				pro="75%"
+				/>
+			</div>
+		</section>
+		<section class="flex justify-evenly my-10 items-center text-black">
+			<div class="w-1/4 flex flex-col gap-2 items-center justify-center">
+				<img class="w-44" src="../../public/Sena Learn LOGO.png" alt="">
+				<p class="font-medium">Creemos en el poder de la educación para cambiar vidas, y estamos aquí para impulsarte en tu viaje hacia el éxito</p>
+			</div>
+			<ul class="list-disc font-medium">
+				<li>Negocios y Emprendimiento</li>
+				<li>Diseño y multimedia</li>
+				<li>Analisis y desarrollo de software</li>
+				<li>Mantenimiento de computadores</li>
+				<li>Automotriz</li>
+			</ul>
+			<ul class="list-disc font-medium">
+				<li>Aviación</li>
+				<li>Gestión</li>
+				<li>Seguridad y salud en el trabajo</li>
+				<li>Modistería</li>
+				<li>Entrenamiento deportivo</li>
+			</ul>
+		</section>
+	</main>
+	<Footer />
+</Layout>

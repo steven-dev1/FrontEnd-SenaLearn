@@ -5,7 +5,7 @@ const { score, title, img, category} = Astro.props
 
 <article class="w-[300px] flex flex-col gap-3 items-center bg-white p-3 rounded-3xl hover:scale-105 transition-all duration-200 shadow-xl">
     <picture>
-        <img src={img} class="w-[261px] h-[200px] bg-slate-400 rounded-3xl "></img>
+        <img src={img} class="w-[261px] h-[200px] bg-slate-400 rounded-3xl object-fill"></img>
     </picture>
     <div class="w-full text-black font-bold text-lg">
         <h3 class="truncate">{title}</h3>
@@ -24,6 +24,12 @@ const { score, title, img, category} = Astro.props
         </div>
     </div>
     <div class="flex justify-center">
-        <DarkButtons>Inscribirme</DarkButtons>
+        <DarkButtons href="/inscripciones">Inscribirme</DarkButtons>
     </div>
 </article>
+
+<style>
+    .img{
+        object-fit: cover;
+    }
+</style>

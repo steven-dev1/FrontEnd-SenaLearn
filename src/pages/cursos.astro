@@ -1,0 +1,149 @@
+---
+import Layout from "../layouts/Layout.astro";
+import MessageHeader from "../components/MessageHeader.astro";
+import HeaderVisitor from "../components/HeaderVisitor.astro";
+import SignUpCards from "../components/SignUpCards.astro";
+import CursosVisitor from "../components/CursosVisitor.astro"
+import DarkButtons from "../components/DarkButtons.astro";
+import Footer from "../components/Footer.astro";
+---
+
+
+<Layout title="cursos">
+    <MessageHeader/>
+    <HeaderVisitor/>
+    <CursosVisitor/>
+    <section class="w-full bg-[#fff] pb-20 flex flex-col justify-center items-center ">
+		<div class="my-7">
+			<h1 class="text-3xl font-bold text-[#00324D]">Sistemas</h1>
+		</div>
+		<div class="w-full grid gap-10 grid-cols-4 place-items-center">
+			<SignUpCards 
+				title="Desarrollo Front-End con HTML, CSS y JavaScript"
+				score="4.8"
+				img="../../public/image1.jpg"
+				category="Desarrollo de software">
+				<i slot="stars" class="fa-solid fa-star"></i>
+				<i slot="stars" class="fa-solid fa-star"></i>
+				<i slot="stars" class="fa-solid fa-star"></i>
+				<i slot="stars" class="fa-solid fa-star"></i>
+			</SignUpCards>
+			<SignUpCards 
+				title="Desarrollo Back-End con PHP, Python y Java"
+				score="4.7"
+				img="../../public/image2.jpeg"
+				category="Desarrollo de software"
+			>
+				<i slot="stars" class="fa-solid fa-star"></i>
+				<i slot="stars" class="fa-solid fa-star"></i>
+				<i slot="stars" class="fa-solid fa-star"></i>
+			</SignUpCards>
+			<SignUpCards 
+				title="Introducción a Bases de datos y SQL"
+				score="4.8"
+				img="../../public/image3.jpeg"
+				category="Desarrollo de software"
+			>
+				<i slot="stars" class="fa-solid fa-star"></i>
+				<i slot="stars" class="fa-solid fa-star"></i>
+				<i slot="stars" class="fa-solid fa-star"></i>
+				<i slot="stars" class="fa-solid fa-star"></i>
+			</SignUpCards>
+
+			<SignUpCards 
+				title="Introducción a Nodejs y experess"
+				score="4.8"
+				img="../../public/nodejs-logo-image.png"
+				category="Desarrollo de software"
+			>
+				<i slot="stars" class="fa-solid fa-star"></i>
+				<i slot="stars" class="fa-solid fa-star"></i>
+				<i slot="stars" class="fa-solid fa-star"></i>
+				<i slot="stars" class="fa-solid fa-star"></i>
+				<i slot="stars" class="fa-solid fa-star"></i>
+			</SignUpCards>
+
+			<SignUpCards 
+				title="Introducción Python"
+				score="4.8"
+				img="../../public/Python-Symbol_0.png"
+				category="Desarrollo de software"
+			>
+				<i slot="stars" class="fa-solid fa-star"></i>
+				<i slot="stars" class="fa-solid fa-star"></i>
+				<i slot="stars" class="fa-solid fa-star"></i>
+				<i slot="stars" class="fa-solid fa-star"></i>
+				<i slot="stars" class="fa-solid fa-star"></i>
+			</SignUpCards>
+			
+			<SignUpCards 
+				title="Introducción Java"
+				score="4.8"
+				img="../../public/java-logo.png"
+				category="Desarrollo de software"
+			>
+				<i slot="stars" class="fa-solid fa-star"></i>
+				<i slot="stars" class="fa-solid fa-star"></i>
+				<i slot="stars" class="fa-solid fa-star"></i>
+				<i slot="stars" class="fa-solid fa-star"></i>
+			</SignUpCards>
+			
+			<SignUpCards 
+				title="Introducción a la React"
+				score="4.8"
+				img="../../public/reactjs.webp"
+				category="Desarrollo de software"
+			>
+				<i slot="stars" class="fa-solid fa-star"></i>
+				<i slot="stars" class="fa-solid fa-star"></i>
+				<i slot="stars" class="fa-solid fa-star"></i>
+			</SignUpCards>
+			
+			<SignUpCards 
+				title="Introducción Ruby"
+				score="4.8"
+				img="../../public/image3.jpeg"
+				category="Desarrollo de software"
+			>
+				<i slot="stars" class="fa-solid fa-star"></i>
+				<i slot="stars" class="fa-solid fa-star"></i>
+				<i slot="stars" class="fa-solid fa-star"></i>
+				<i slot="stars" class="fa-solid fa-star"></i>
+			</SignUpCards>
+
+		</div>
+    </section>
+
+    <!-- <article class="w-[650px] h-[300px] flex gap-3 items-center bg-white mb-8 p-3 rounded-3xl shadow-xl hover:scale-105 transition-all duration-200 shadow-xl mx-auto">
+        <picture class="flex items-center justify-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png" class="w-full h-fullbg-slate-400 rounded-3xl"/>
+        </picture>
+        <div class="flex flex-col items-center justify-center w-1/2 gap-3">
+            <div class="w-full text-black font-bold text-lg">
+                <h3 class="truncate">NodeJS: De cero a experto</h3>
+            </div>
+            <div class="text-black flex flex-col w-full gap-2">
+                <div>
+                    <span class="font-medium text-gray-600 text-sm">Clean Architecture, DDD, WebHooks, WebSockets, Tareas automáticas, Despliegues, TypeScript, Edge, Testing y más</span>
+                </div>
+                <div class="flex gap-2">
+                    <div>
+                        <span class="font-semibold text-gray-600">4.8</span>
+                    </div>
+                    <div class="text-yellow-500">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <DarkButtons>Inscribirse</DarkButtons>
+        </div>
+        </div>
+        <div class="flex justify-center">   
+        </div>
+    </article> -->
+
+    <Footer/>
+</Layout>
+
