@@ -1,0 +1,71 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import SignUpCards from "../components/SignUpCards.astro";
+import ContinueCards from "../components/ContinueCards.astro";
+---
+
+<Layout title="Inicio">
+    <Header />
+    <main>
+		<article class="flex mt-3 mb-16 items-center">
+			<section class="flex-1 ml-[67.1562px] p-3">
+				<div class="flex flex-col justify-end w-2/4 mb-3">
+					<h4 class="text-5xl font-bold">Descrubre</h4>
+					<h4 class="text-5xl font-bold text-[#FF6C20] relative left-16">Desarrolla</h4>
+					<h4 class="text-5xl font-bold">Domina</h4>
+				</div>
+				<div class="w-3/4 font-medium">
+					<p>Nuestra plataforma ofrece una amplia gama de cursos virtuales diseñados para empoderar a las mentes curiosas y ambiciosas.</p>
+				</div>
+			</section>
+			<section class="relative">
+				<img class="absolute z-10 w-96 left-20 bottom-0" src="../../public/Character Header.png" alt="">
+				<div class="polygon-header">
+	
+				</div>
+			</section>
+		</article>
+		<section class="bg-[#00324D] pb-20 flex flex-col justify-center items-center">
+			<div class="my-7">
+				<h1 class="text-5xl font-bold text-white">Seguir viendo</h1>
+			</div>
+			<div class="w-full flex justify-evenly">
+				<ContinueCards 
+                    title="Desarrollo Front-End con HTML, CSS y JavaScript"
+                    img="../../public/image1.jpg"
+                    progress="68"
+                />
+				<ContinueCards 
+                    title="Desarrollo Back-End con PHP, Python y Java"
+                    img="../../public/image2.jpeg"
+                    progress="28"
+                />
+				<ContinueCards 
+                    title="Introducción a Bases de datos y SQL"
+                    img="../../public/image3.jpeg"
+                    progress="48"
+                />
+			</div>
+		</section>
+		<section>
+			
+		</section>
+	</main>
+    <Footer />
+</Layout>
+
+<style>
+    .polygon-header {
+        width: 530px; 
+        height: 355px;
+        background: #00324D;
+        /* Skew */
+        -webkit-transform: skew(30deg); 
+        -moz-transform: skew(30deg); 
+        -o-transform: skew(30deg);
+        transform: skew(20deg);
+        border-radius: 50px 0 0 50px;
+    }
+</style>

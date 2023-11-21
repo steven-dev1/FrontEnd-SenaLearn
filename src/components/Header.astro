@@ -1,0 +1,22 @@
+---
+import DarkButtons from "./DarkButtons.astro";
+import Link from "./Link.astro";
+---
+
+<header class="mb-2">
+    <nav class="p-3 max-w-[90%] mx-auto">
+        <ul class="flex justify-between items-center">
+            <picture>
+                <img class="w-28 m-3" src="../../public/Sena Learn LOGO.png" alt="">
+            </picture>
+            <div class="flex gap-10 items-center">
+                <Link href="/inicio">Inicio</Link>
+                <Link href="/">Mis cursos</Link>
+                <Link href="/">Especialidades</Link>
+                <a href="" class="hover:scale-[1.15] hover:text-[#00324D] transition-all duration-200"><i class="fa-solid fa-bell text-2xl"></i></a>
+                <a href="" class="hover:scale-[1.15] hover:text-[#00324D] transition-all duration-200"><i class="fa-solid fa-envelope text-2xl"></i></a>
+                <DarkButtons href="/register"><i class="fa-solid fa-user mr-2"></i>Mi cuenta</DarkButtons>
+            </div>
+        </ul>
+    </nav>
+</header>
