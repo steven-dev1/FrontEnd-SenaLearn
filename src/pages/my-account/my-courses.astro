@@ -1,0 +1,40 @@
+---
+import Header from "../../components/Header.astro";
+import Layout from '../../layouts/Layout.astro';
+import Footer from '../../components/Footer.astro'
+import AsideUser from "../../components/AsideUser.astro"
+import CardUserInfo from "../../components/CardUserInfo.astro"
+---
+
+<Layout title="Informacion Usuario">
+    <Header />
+    <div class="flex justify-start items-start gap-10 mb-[50px] w-[90%] mx-auto ">
+        <AsideUser />
+        <section class="flex flex-col items-start w-full h-full justify-start">
+            <div class="w-full mb-5">
+                <h2 class="text-2xl font-bold text-center">Mis cursos</h2>
+            </div>
+            <div class="w-full flex justify-between">
+                <CardUserInfo 
+                title="Desarrollo Front-End con HTML, CSS y JavaScript" 
+                img="../../../public/image1.jpg"
+                category="Desarrollo de Software"
+                href="/courses/Desarrollo Front-End con HTML, CSS y JavaScript/course"
+                />
+                <CardUserInfo 
+                title="Cualidades físicas en el entrenamiento deportivo" 
+                img="../../../public/image4.jpg"
+                category="Desarrollo de Software"
+                href="/courses/Desarrollo Front-End con HTML, CSS y JavaScript/course"
+                />
+                <CardUserInfo 
+                title="Desarrollo Front-End con HTML, CSS y JavaScript" 
+                img="../../../public/image1.jpg"
+                category="Desarrollo de Software"
+                href="/courses/Desarrollo Front-End con HTML, CSS y JavaScript/course"
+                />
+            </div>
+        </section>
+    </div>
+    <Footer/>
+</Layout>

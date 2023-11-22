@@ -9,14 +9,15 @@ import Link from "./Link.astro";
             <picture>
                 <img class="w-28 m-3" src="../../public/Sena Learn LOGO.png" alt="">
             </picture>
-            <div class="flex gap-10">
-                <Link href="/">Inicio</Link>
-                <Link href="/">Cursos</Link>
-                <Link href="/">Especialidades</Link>
-            </div>
-            <div>
-                <DarkButtons href="/login">Iniciar sesión</DarkButtons>
-                <DarkButtons href="/register">Registrarse</DarkButtons>
+            <div class="flex items-center gap-10">
+                <div class="flex gap-10">
+                    <Link href="/">Inicio</Link>
+                    <Link href="/">Cursos</Link>
+                </div>
+                <div>
+                    <DarkButtons href="/login">Iniciar sesión</DarkButtons>
+                    <DarkButtons href="/register">Registrarse</DarkButtons>
+                </div>
             </div>
         </ul>
     </nav>

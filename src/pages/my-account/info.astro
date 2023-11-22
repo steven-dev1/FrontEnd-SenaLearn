@@ -1,0 +1,36 @@
+---
+import Header from "../../components/Header.astro";
+import Layout from '../../layouts/Layout.astro';
+import Footer from '../../components/Footer.astro'
+import AsideUser from "../../components/AsideUser.astro"
+
+---
+
+<Layout title="Informacion Usuario">
+    <Header />
+    <div class="flex justify-start items-center gap-10 mb-[50px] w-[90%] mx-auto ">
+        <AsideUser />
+        <section class="">
+            <div>
+                <strong class="text-[#00324D]">Nombre:</strong>
+                <h3 class="text-[#020617]">Carlos arturo</h3>
+            </div>
+            <br>
+            <div>
+                <strong class="text-[#00324D]">Apellido:</strong>
+                <h3 class="text-[#020617]">Bacca ahumada</h3>
+            </div>
+            <br>
+            <div>
+                <strong class="text-[#00324D]">N° Id o Gmail:</strong>
+                <h3 class="text-[#020617]">Baccagoleador9@gmail.com</h3>
+            </div>
+            <br>
+            <div>
+                <strong class="text-[#00324D]">Telefono:</strong>
+                <h3 class="text-[#020617]">+57 305 4567890</h3>
+            </div>
+        </section>
+    </div>
+    <Footer/>
+</Layout>

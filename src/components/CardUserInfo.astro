@@ -1,0 +1,19 @@
+---
+import DarkButtons from "./DarkButtons.astro";
+const { title, img, category, href} = Astro.props
+---
+
+<article class="max-w-[250px] bg-gray-200 p-6 rounded-2xl hover:scale-110 transition-all duration-200 text-center flex flex-col items-center justify-between">
+    <picture>
+        <img src={img} class=" bg-slate-400 rounded-3xl"></img>
+    </picture>
+    <div class="w-full text-black font-bold text-lg">
+        <h3 class="truncate">{title}</h3>
+    </div>
+    <div class="text-black flex flex-col w-full mb-3">
+        <div>
+            <span class="font-medium text-gray-600 text-sm">{category}</span>
+        </div>
+    </div>
+    <DarkButtons href={href}>Ir al curso</DarkButtons>
+</article>
