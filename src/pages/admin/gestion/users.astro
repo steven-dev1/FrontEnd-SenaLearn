@@ -1,0 +1,34 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import AsideUser from "../../../components/AsideUser.astro"
+import Header from "../../../components/Header.astro";
+import Inputs from "../../../components/Inputs.astro"
+import CardUserGestion from "../../../components/CardUserGestion.astro"
+import Footer from "../../../components/Footer.astro";
+---
+
+<Layout title="Gestionar usuarios">
+    <Header />
+    <main>
+        <div class="p-6 flex gap-6 w-[90%] mx-auto justify-center">
+            <AsideUser />
+            <section class="w-full">
+                <div class="flex flex-col items-center">
+                    <h2 class="font-bold text-2xl">Gestión de usuarios</h2>
+                    <div>
+                        <div class="flex items-center gap-3">
+                            <span class="mr-3">Filtro:</span>
+                            <Inputs placeholder="Nombre de usuario"/>
+                            <Inputs placeholder="Email del usuario"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-[2px] bg-gray-200 w-full my-5"></div>
+                <div>
+                    <CardUserGestion />
+                </div>
+            </section>
+        </div>
+    </main>
+    <Footer />
+</Layout>
